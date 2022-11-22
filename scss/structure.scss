@@ -16,3 +16,43 @@ h6,
 p {
   margin-bottom: 16px;
 }
+
+@font-face {
+  font-family: caveatRegular;
+  src: url(../fonts/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: caveatBold;
+  src: url(../fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+  font-family: gillSans;
+  src: url(../fonts/GillSans.ttf);
+}
+
+@font-face {
+  font-family: gillSansItalic;
+  src: url(../fonts/GillSans\ Italic.ttf);
+}
+
+@font-face {
+  font-family: gillSansLight;
+  src: url(../fonts/GillSans-Light.ttf);
+}
+
+@font-face {
+  font-family: latoRegular;
+  src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: latoItalic;
+  src: url(../fonts/Lato/Lato-Italic.ttf);
+}
+
+@font-face {
+  font-family: latoItalicBlack;
+  src: url(../fonts/Lato/Lato-BlackItalic.ttf);
+}

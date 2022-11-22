@@ -1,74 +1,76 @@
-.home-page{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../images/hero-3.jpg);
-    background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+.home-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+      rgba(242, 92, 84, 0.7),
+      rgba(242, 92, 84, 0.7)
+    ),
+    url(../images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
+  .banner {
+    width: 50%;
+    height: 60%;
+    position: relative;
 
-    .banner{
-        width: 50%;
-        height: 60%;
-        position: relative;
+    .circle {
+      .circle-one {
+        margin: 0 auto;
+        width: 167px;
+        height: 167px;
+        background-color: #fcbcb8;
+        border-radius: 50%;
+        position: absolute;
+        // top: 194px;
+        left: 400px;
 
-        .circle{
-            
-            
+        .text-one {
+          max-width: 105px;
+          font-size: 10px;
+          position: absolute;
+          top: 50px;
+          left: 30px;
+          font-family: latoItalic;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
 
-            .circle-one{
-                margin: 0 auto;
-                width: 167px;
-                height: 167px;
-                background-color: #FCBCB8;
-                border-radius: 50%;
-                position: absolute;
-                // top: 194px;
-                left: 400px;
-              
-               
-                .text-one{
-                    max-width: 105px;
-                    font-size: 10px;
-                    position: absolute;
-                    top: 50px;
-                    left: 35px;
-                }
-               
-                
-            }
+      .circle-two {
+        margin: 0 auto;
+        width: 375px;
+        height: 375px;
+        background-color: #ffd972;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 115px;
 
-            .circle-two{
-                margin: 0 auto;
-                width: 375px;
-                height: 375px;
-                background-color: #FFD972;
-                border-radius: 50%;
-                position: absolute;
-                top: 50px;
-                left: 115px;
-
-                .text-two{
-                    position: absolute;
-                    top: 100px;
-                    left: 125px;
-                }
-                
-                .text-three{
-                    max-width: 175px;
-                    position: absolute;
-                    top: 150px;
-                    left: 110px;
-                }
-                
-            }
-
+        .text-two {
+          position: absolute;
+          top: 100px;
+          left: 100px;
+          font-family: caveatBold;
+          font-size: 24px;
+          letter-spacing: 2.4px;
         }
 
-        
+        .text-three {
+          max-width: 175px;
+          position: absolute;
+          top: 150px;
+          left: 100px;
+          font-family: latoRegular;
+          font-size: 13px;
+          letter-spacing: 1.3px;
+          text-align: center;
+        }
+      }
     }
+  }
 }
-

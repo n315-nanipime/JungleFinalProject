@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  //height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-family: latoItalic;
+  font-size: 15px;
+  bottom: 5%;
+  //position: relative;
+  position: fixed;
+  letter-spacing: 1.5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer .footer-left {
+}
+
+footer .footer-middle {
+  display: flex;
+  align-items: center;
+}
+
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer-right {
+}
+
+footer .footer-right img {
+  width: 19px;
+  height: 19px;
+}
