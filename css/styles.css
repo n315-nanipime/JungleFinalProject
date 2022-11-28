@@ -87,6 +87,22 @@ nav .links {
   letter-spacing: 2.5px;
 }
 
+nav .loginAccount {
+  margin-right: 1%;
+}
+
+nav #loginBtn {
+  background: #ffd972 0% 0% no-repeat padding-box;
+  width: 158px;
+  height: 52px;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  border-width: 0;
+  font-family: caveatRegular;
+  font-size: 25px;
+  letter-spacing: 2.5px;
+}
+
 footer {
   width: 100%;
   display: flex;

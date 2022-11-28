@@ -69,8 +69,17 @@ function initApp() {
 function loopData() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
+
   var pages = document.getElementById("app");
+
   $(pages).html(MODEL.changePage(pageID));
+}
+
+function btnListeners() {
+  document.getElementById("loginBtn").addEventListener("click", (e) => {
+    e.preventDefault();
+    $();
+  });
 }
 
 /**
