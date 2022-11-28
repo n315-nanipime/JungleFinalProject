@@ -59,7 +59,6 @@ nav {
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
-  position: fixed;
 }
 
 nav a {
@@ -130,6 +129,7 @@ footer .footer-right img {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: fixed;
 }
 .home-page .banner {
   width: 50%;
@@ -192,6 +192,7 @@ footer .footer-right img {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: green;
+  position: fixed;
 }
 .browse .browse-page {
   width: 30%;
@@ -276,6 +277,74 @@ footer .footer-right img {
   width: 100%;
   height: 100%;
   background-color: #ffd972;
+}
+.account-page .login-info {
+  position: relative;
+}
+.account-page .login-info .login {
+  max-width: 206px;
+  margin: 0 auto;
+  position: absolute;
+  top: 283px;
+  left: 276px;
+}
+.account-page .login-info .login .login-text {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.account-page .login-info .login input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: #ffd972;
+  font-size: 12px;
+}
+.account-page .login-info button {
+  width: 209px;
+  height: 52px;
+  background-color: #ffd972;
+  border-radius: 10px;
+  border: #ffd972;
+  box-shadow: 0px 10px 20px 1px gray;
+  margin-top: 20px;
+}
+.account-page .login-info .sign {
+  max-width: 300px;
+  margin: 0 auto;
+  position: absolute;
+  top: 175px;
+  left: 773px;
+}
+.account-page .login-info .sign .question {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.account-page .login-info .sign .sign-text {
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+.account-page .login-info .sign input {
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  background-color: #ffd972;
+  font-size: 12px;
+}
+.account-page .login-info .sign button {
+  width: 209px;
+  height: 52px;
+  background-color: #ffd972;
+  border-radius: 10px;
+  border-color: #707070;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */
