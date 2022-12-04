@@ -363,4 +363,93 @@ footer .footer-right img {
   margin-top: 20px;
 }
 
+.your-recipes {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: green;
+  position: fixed;
+}
+.your-recipes .recipes-page {
+  width: 30%;
+  height: 15%;
+  position: relative;
+}
+.your-recipes .try-text {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+}
+.your-recipes .foods-one {
+  margin: 0 auto;
+  width: 95%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.your-recipes .foods-one .recipe-holder {
+  width: 524px;
+  height: 263px;
+  display: flex;
+}
+.your-recipes .foods-one .recipe-holder .recipe-image {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text {
+  width: 224px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .title {
+  margin-top: 12px;
+  margin-left: 60px;
+  font-size: 15px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .break {
+  width: 150px;
+  height: 5px;
+  background-color: black;
+  margin-top: -13px;
+  margin-left: 40px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .info {
+  margin-left: 30px;
+  font-size: 9px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .time {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .time img {
+  width: 10px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .serving {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.your-recipes .foods-one .recipe-holder .recipe-text .serving img {
+  width: 10px;
+}
+.your-recipes .foods-one .recipe-holder .pizza {
+  background-image: url(../images/recipe-pizza.jpg);
+}
+.your-recipes .foods-one .recipe-holder .burger {
+  background-image: url(../images/recipe-burger.jpg);
+}
+.your-recipes .foods-one .chicken {
+  background-image: url(../images/recipe-pilaf.jpg);
+}
+.your-recipes .foods-one .chow {
+  background-image: url(../images/recipe-chowmein.jpg);
+}
+
 /*# sourceMappingURL=styles.css.map */
