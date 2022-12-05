@@ -54,11 +54,39 @@ function route() {
     MODEL.changePage("home");
   } else {
     if (pageID == subPageID) {
-      MODEL.changePage(pageID);
+      MODEL.changePage(pageID, addsubmitListeners);
     } else {
       MODEL.changePage(pageID, subPageID);
     }
   }
+}
+
+function addsubmitListeners() {
+  $("#submit").click(function (e) {
+    e.preventDefault();
+    console.log("submit");
+    let fn = $("#fn").val();
+    let ln = $("#ln").val();
+    let em = $("#em").val();
+    let pw = $("#pw").val();
+    if (fn == "") {
+      Swal.fire("add first name");
+    } else if (ln == "") {
+      Swal.fire("add last name");
+    } else if (em == "") {
+      Swal.fire("add email");
+    } else if (pw == "") {
+      Swal.fire("add password");
+    } else {
+      login();
+    }
+    console.log(fn);
+    login();
+  });
+}
+
+function login() {
+  Swal.fire("submit");
 }
 
 function initApp() {

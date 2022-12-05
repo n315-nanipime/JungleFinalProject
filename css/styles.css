@@ -421,6 +421,7 @@ footer .footer-right img {
   -webkit-box-shadow: 0px 10px 20px 1px gray;
           box-shadow: 0px 10px 20px 1px gray;
   margin-top: 20px;
+  cursor: pointer;
 }
 .account-page .login-info .sign {
   max-width: 300px;
@@ -455,6 +456,7 @@ footer .footer-right img {
   border-radius: 10px;
   border-color: #707070;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1000px) {

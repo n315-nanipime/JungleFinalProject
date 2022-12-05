@@ -1,5 +1,5 @@
 export function changePage(pageID, subPage) {
-  console.log("sub " + subPage);
+  // console.log("sub " + subPage);
   console.log("page " + pageID);
 
   if (subPage == undefined) {
