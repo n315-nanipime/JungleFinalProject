@@ -75,6 +75,37 @@ function btnListeners() {
   });
 }
 
+// function btnListeners() {
+//   $("#sign-button").on("click", function (e) {
+//     //e.preventDefault();
+//     console.log("submit");
+
+//     let fn = $("#fn").val();
+//     let ln = $("#ln").val();
+//     let em = $("#em").val();
+//     let pw = $("#pw").val();
+//     if (fn == "") {
+//       alert("enter first name");
+//     } else if (ln == "") {
+//       alert("enter data");
+//     } else if (em == "") {
+//       alert("enter data");
+//     } else if (pw == "") {
+//       alert("enter data");
+//     } else {
+//       let userObj = {
+//         firstName: fn,
+//         lastName: ln,
+//         email: em,
+//         password: pw,
+//         // in a normal example, you would not store pw
+//       };
+
+//       MODEL.setUserInfo(userObj);
+//     }
+//   });
+// }
+
 // function addFooterLinks() {
 //   $("footer .links").html(``);
 //   $.each(obj.FooterLinks, (idx, footerItem) => {
@@ -89,4 +120,8 @@ function btnListeners() {
 $(document).ready(function () {
   //addFooterLinks();
   initApp();
+});
+
+$(window).on("load", function () {
+  MODEL.changePage("home");
 });
