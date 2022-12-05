@@ -1,6 +1,6 @@
 .browse {
   width: 100%;
-  height: 100%;
+  height: 1000px;
   background-image: linear-gradient(
       rgba(167, 232, 189, 0.7),
       rgba(167, 232, 189, 0.7)
@@ -10,7 +10,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: green;
-  position: fixed;
+  // position: fixed;
+  padding-top: 150px;
 
   .browse-page {
     width: 30%;
@@ -22,6 +23,7 @@
     position: absolute;
     top: 60px;
     left: 150px;
+    font-family: caveatRegular;
   }
 
   .foods-one {
@@ -50,11 +52,13 @@
         height: 263px;
         background-color: white;
         border-radius: 20px;
+        font-family: latoRegular;
 
         .title {
           margin-top: 12px;
           margin-left: 60px;
           font-size: 15px;
+          font-family: latoRegular;
         }
         .break {
           width: 150px;
@@ -106,3 +110,18 @@
     }
   }
 }
+@media all and (max-width: 1000px) {
+  .browse {
+    flex-direction: column;
+
+    // margin-top: 20px;
+    height: fit-content;
+  }
+
+  .foods-one {
+    flex-direction: column;
+    // margin-bottom: 120px;
+    // margin-top: 20px;
+  }
+}
+
