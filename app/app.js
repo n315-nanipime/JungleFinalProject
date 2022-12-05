@@ -46,18 +46,11 @@ import * as MODEL from "./model.js";
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  let pageIDArray = pageID.split("/");
-  pageID = pageIDArray[0];
-  let subPageID = pageIDArray[1];
 
   if (pageID == "") {
     MODEL.changePage("home");
   } else {
-    if (pageID == subPageID) {
-      MODEL.changePage(pageID);
-    } else {
-      MODEL.changePage(pageID, subPageID);
-    }
+    MODEL.changePage(pageID);
   }
 }
 
@@ -82,22 +75,6 @@ function btnListeners() {
   });
 }
 
-/**
- * It takes the data from the JSON file and adds it to the HTML file.
- */
-// function addNav() {
-//   $("nav .links").html(``);
-//   $.each(obj.Navigation, (idx, navItem) => {
-//     $("nav .links").append(
-//       `<a id="${idx}" href="#${navItem.hrefName.toLowerCase()}">${
-//         navItem.name
-//       }</a>`
-//     );
-//   });
-//   //eventListeners();
-//   //loopData();
-// }
-
 // function addFooterLinks() {
 //   $("footer .links").html(``);
 //   $.each(obj.FooterLinks, (idx, footerItem) => {
@@ -110,7 +87,6 @@ function btnListeners() {
 // }
 
 $(document).ready(function () {
-  //addNav();
   //addFooterLinks();
   initApp();
 });
