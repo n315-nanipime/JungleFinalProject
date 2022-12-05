@@ -6,6 +6,7 @@ nav {
   justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
+  margin-bottom: -150px;
 }
 
 nav a {
@@ -36,17 +37,18 @@ nav .links {
 
 nav .loginAccount {
   margin-right: 1%;
-}
-
-nav #loginBtn {
   background: #ffd972 0% 0% no-repeat padding-box;
   width: 158px;
   height: 52px;
   box-shadow: 0px 10px 6px #00000029;
   border-radius: 26px;
   border-width: 0;
-
   font-family: caveatRegular;
   font-size: 25px;
   letter-spacing: 2.5px;
+  p {
+    margin-left: 40px;
+    margin-top: 7px;
+  }
 }
+
