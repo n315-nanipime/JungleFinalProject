@@ -46,18 +46,11 @@ import * as MODEL from "./model.js";
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
-  let pageIDArray = pageID.split("/");
-  pageID = pageIDArray[0];
-  let subPageID = pageIDArray[1];
 
   if (pageID == "") {
     MODEL.changePage("home");
   } else {
-    if (pageID == subPageID) {
-      MODEL.changePage(pageID, addsubmitListeners);
-    } else {
-      MODEL.changePage(pageID, subPageID);
-    }
+    MODEL.changePage(pageID);
   }
 }
 
@@ -110,20 +103,35 @@ function btnListeners() {
   });
 }
 
-/**
- * It takes the data from the JSON file and adds it to the HTML file.
- */
-// function addNav() {
-//   $("nav .links").html(``);
-//   $.each(obj.Navigation, (idx, navItem) => {
-//     $("nav .links").append(
-//       `<a id="${idx}" href="#${navItem.hrefName.toLowerCase()}">${
-//         navItem.name
-//       }</a>`
-//     );
+// function btnListeners() {
+//   $("#sign-button").on("click", function (e) {
+//     //e.preventDefault();
+//     console.log("submit");
+
+//     let fn = $("#fn").val();
+//     let ln = $("#ln").val();
+//     let em = $("#em").val();
+//     let pw = $("#pw").val();
+//     if (fn == "") {
+//       alert("enter first name");
+//     } else if (ln == "") {
+//       alert("enter data");
+//     } else if (em == "") {
+//       alert("enter data");
+//     } else if (pw == "") {
+//       alert("enter data");
+//     } else {
+//       let userObj = {
+//         firstName: fn,
+//         lastName: ln,
+//         email: em,
+//         password: pw,
+//         // in a normal example, you would not store pw
+//       };
+
+//       MODEL.setUserInfo(userObj);
+//     }
 //   });
-//   //eventListeners();
-//   //loopData();
 // }
 
 // function addFooterLinks() {
@@ -138,7 +146,10 @@ function btnListeners() {
 // }
 
 $(document).ready(function () {
-  //addNav();
   //addFooterLinks();
   initApp();
+});
+
+$(window).on("load", function () {
+  MODEL.changePage("home");
 });

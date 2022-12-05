@@ -1,24 +1,18 @@
-export function changePage(pageID, subPage) {
-  // console.log("sub " + subPage);
-  console.log("page " + pageID);
+// just trying out
+//var userInfo = {};
 
-  if (subPage == undefined) {
-    $.get(`pages/${pageID}.html`, function (data) {
-      $("#app").html(data);
-    }).fail((error) => {
-      if (error.status == "404") {
-        //   alert("Page cannot be found. Pleach check your url.");
-      }
-      console.log("error", error.status);
-    });
-  } else {
-    $.get(`pages/${pageID}/${subPage}.html`, function (data) {
-      $("#app").html(data);
-    }).fail((error) => {
-      if (error.status == "404") {
-        //   alert("Page cannot be found. Pleach check your url.");
-      }
-      console.log("error", error.status);
-    });
-  }
+export function changePage(pageID) {
+  $.get(`pages/${pageID}.html`, function (data) {
+    $("#app").html(data);
+  }).fail((error) => {
+    if (error.status == "404") {
+    }
+    console.log("error", error.status);
+  });
 }
+
+// trying the login
+// export function setUserInfo(userObject) {
+//   userInfo = userObject;
+//   console.log(userInfo);
+// }
