@@ -1,7 +1,8 @@
 .account-page {
   width: 100%;
-  height: 100%;
+  height: 1000px;
   background-color: #ffd972;
+  // padding-top: 150px;
 
   .login-info {
     position: relative;
@@ -75,5 +76,28 @@
         margin-top: 20px;
       }
     }
+  }
+}
+@media all and (max-width: 1000px) {
+  .account-page {
+    flex-direction: column;
+
+    // margin-top: 20px;
+  }
+
+  .login-info {
+    flex-direction: column;
+  }
+
+  .login {
+    flex-direction: column;
+  }
+
+  .login-text {
+    flex-direction: column;
+  }
+
+  input {
+    flex-direction: column;
   }
 }
