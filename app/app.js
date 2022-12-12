@@ -154,6 +154,8 @@ function addsubmitListeners() {
     console.log(fn);
     // login();
   });
+
+  $("#login-button").click(function (e) {});
 }
 
 function login() {
