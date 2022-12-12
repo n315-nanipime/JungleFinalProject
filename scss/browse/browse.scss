@@ -10,19 +10,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: green;
-  // position: fixed;
   padding-top: 150px;
 
   .browse-page {
     width: 30%;
-    height: 15%;
-    position: relative;
+    height: 10%;
   }
 
   .try-text {
-    position: absolute;
-    top: 30px;
-    left: 150px;
+    margin: 0 35%;
+    margin-top: 50px;
+    width: 300px;
     font-family: caveatRegular;
     font-size: 25px;
   }
@@ -35,8 +33,8 @@
     justify-content: space-evenly;
 
     .recipe-holder {
-      width: 524px;
-      height: 263px;
+      max-width: 524px;
+      min-height: 263px;
       display: flex;
 
       .recipe-image {
@@ -114,11 +112,20 @@
 @media all and (max-width: 1000px) {
   .browse {
     flex-direction: column;
+    height: 100%;
 
-    height: fit-content;
-  }
+    // height: fit-content;
+    .foods-one {
+      flex-direction: column;
+      padding-bottom: 50px;
 
-  .foods-one {
-    flex-direction: column;
+      .recipe-holder {
+        padding-bottom: 50px;
+      }
+
+      .recipe-image {
+        padding-bottom: 50px;
+      }
+    }
   }
 }

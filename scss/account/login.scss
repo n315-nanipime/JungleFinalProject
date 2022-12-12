@@ -9,14 +9,10 @@
     margin: 0 15%;
     align-items: center;
     justify-content: space-evenly;
-    // position: relative;
 
     .login {
       max-width: 206px;
       margin: 0 auto;
-      // position: absolute;
-      // top: 283px;
-      // left: 276px;
 
       .login-text {
         margin-bottom: 50px;
@@ -52,9 +48,6 @@
     .sign {
       max-width: 300px;
       margin: 0 auto;
-      // position: absolute;
-      // top: 175px;
-      // left: 773px;
 
       .question {
         font-size: 12px;
@@ -97,8 +90,6 @@
   .account-page {
     flex-direction: column;
     height: 100%;
-    // background-color: #707070;
-    // padding-bottom: 40px;
 
     .login-info {
       flex-direction: column;
@@ -111,7 +102,6 @@
         flex-direction: column;
         top: 575px;
         left: 273px;
-        // margin-bottom: 40px;
         padding-bottom: 250px;
 
         .question {
@@ -124,8 +114,6 @@
 
         input {
           flex-direction: column;
-          // top: 575px;
-          // left: 600px;
         }
 
         button {

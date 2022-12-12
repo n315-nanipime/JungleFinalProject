@@ -132,3 +132,100 @@
     margin-bottom: 130px;
   }
 }
+
+@media all and (max-width: 1000px) {
+  .create-recipe {
+    flex-direction: column;
+    // background-color: #efa7a7;
+
+    .recipe-info {
+      flex-direction: column;
+
+      .recipe-input {
+        flex-direction: column;
+        input {
+          width: 60%;
+          height: 50px;
+        }
+
+        .addImg {
+          width: 110px;
+          height: 36px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: black;
+          font-family: caveatRegular;
+          font-size: 17px;
+          border-radius: 15px;
+          cursor: pointer;
+          position: absolute;
+          top: 5px;
+          left: 490px;
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .ingred {
+      flex-direction: column;
+
+      .ingred-input {
+        flex-direction: column;
+
+        input {
+          display: block;
+          width: 60%;
+          height: 50px;
+          margin-bottom: 5px;
+          border: none;
+          border-bottom: 2px solid black;
+          outline: none;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .instruction {
+      flex-direction: column;
+
+      .instruction-input {
+        input {
+          display: block;
+          width: 60%;
+          height: 50px;
+          margin-bottom: 5px;
+          border: none;
+          border-bottom: 2px solid black;
+          outline: none;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .addBtn {
+      width: 38px;
+      height: 38px;
+      background-color: #efa7a7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      bottom: 5px;
+      right: 410px;
+      p {
+        font-size: 20px;
+        // margin-top: 20px;
+        user-select: none;
+        font-family: gillSans;
+      }
+    }
+  }
+}
