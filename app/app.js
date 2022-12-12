@@ -3,56 +3,6 @@ import * as MODEL from "./model.js";
 var ingredCnt = 3;
 var instruCnt = 3;
 
-// var obj = {
-//   Navigation: [
-//     {
-//       name: "Home",
-//       hrefName: "home",
-//     },
-//     {
-//       name: "Browse",
-//       hrefName: "browse",
-//     },
-//     {
-//       name: "Create Recipe",
-//       hrefName: "create",
-//     },
-//     // {
-//     //   name: "Login",
-//     //   hrefName: "login",
-//     // },
-//   ],
-//   FooterLinks: [
-//     {
-//       name: "Login",
-//       hrefName: "login",
-//     },
-//     {
-//       name: "Recipes by Category",
-//       hrefName: "categories",
-//     },
-//     {
-//       name: "Privacy and Copyright",
-//       hrefName: "privacy",
-//     },
-//     {
-//       name: "Create Recipe",
-//       hrefName: "createRecipe",
-//     },
-//     {
-//       name: "Your Recipes",
-//       hrefName: "yourRecipes",
-//     },
-//   ],
-// };
-
-// const ri = document.querySelector("#ri");
-// var upload_image = "";
-
-// ri.addEventListener("change", function () {
-//   console.log(ri.value);
-// });
-
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -67,8 +17,12 @@ function route() {
     MODEL.changePage(pageID, addsubmitListeners);
   } else if (pageID == `recipe`) {
     MODEL.changePage(pageID, addRecipeListeners);
+  } else if (pageID == `created`) {
+    MODEL.changePage(pageID);
   }
 }
+
+function createnewRecipe() {}
 
 function addRecipeListeners() {
   $("#recipe-button").click(function (e) {
