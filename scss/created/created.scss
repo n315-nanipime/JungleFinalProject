@@ -20,9 +20,11 @@
 
   .try-text {
     position: absolute;
-    top: 30px;
-    left: 150px;
-    font-family: caveatRegular;
+    //top: 50px;
+    left: 10%;
+    margin-top: 15%;
+    width: 100%;
+    font-family: caveatBold;
     font-size: 25px;
   }
 
@@ -37,6 +39,8 @@
       width: 524px;
       height: 263px;
       display: flex;
+      align-items: center;
+      justify-content: space-evenly;
 
       .recipe-image {
         width: 300px;
@@ -59,7 +63,7 @@
             justify-content: space-evenly;
             margin: 0 auto;
             margin-top: 40%;
-
+            cursor: pointer;
             text-decoration: none;
 
             width: 128px;
@@ -131,6 +135,21 @@
 
       .chow {
         background-image: url(../images/recipe-chowmein.jpg);
+      }
+
+      #editBtn,
+      #deleteBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        width: 128px;
+        height: 42px;
+        background: #ffd972 0% 0% no-repeat padding-box;
+        box-shadow: 0px 10px 6px #00000029;
+        border-radius: 26px;
+        border-width: 0;
       }
     }
   }

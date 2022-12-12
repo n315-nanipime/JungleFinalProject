@@ -1,6 +1,9 @@
 // just trying out
 //var userInfo = {};
 
+var recipeObj = [];
+//var setNewRecipe = [];
+
 export function changePage(pageID, callback) {
   $.get(`pages/${pageID}.html`, function (data) {
     $("#app").html(data);
@@ -19,6 +22,11 @@ export function changePage(pageID, callback) {
     }
     console.log("error", error.status);
   });
+}
+
+export function setNewRecipe(index) {
+  recipeObj.push(index);
+  //$("#cartCount").html(recipeObj.length.toString());
 }
 
 // trying the login

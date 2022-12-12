@@ -592,9 +592,10 @@ footer .footer-right img {
 }
 .created .try-text {
   position: absolute;
-  top: 30px;
-  left: 150px;
-  font-family: caveatRegular;
+  left: 10%;
+  margin-top: 15%;
+  width: 100%;
+  font-family: caveatBold;
   font-size: 25px;
 }
 .created .foods-one {
@@ -608,6 +609,8 @@ footer .footer-right img {
   width: 524px;
   height: 263px;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .created .foods-one .recipe-holder .recipe-image {
   width: 300px;
@@ -631,6 +634,7 @@ footer .footer-right img {
   justify-content: space-evenly;
   margin: 0 auto;
   margin-top: 40%;
+  cursor: pointer;
   text-decoration: none;
   width: 128px;
   height: 42px;
@@ -688,6 +692,19 @@ footer .footer-right img {
 }
 .created .foods-one .recipe-holder .chow {
   background-image: url(../images/recipe-chowmein.jpg);
+}
+.created .foods-one .recipe-holder #editBtn,
+.created .foods-one .recipe-holder #deleteBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 128px;
+  height: 42px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  border-width: 0;
 }
 
 @media all and (max-width: 1000px) {

@@ -3,49 +3,6 @@ import * as MODEL from "./model.js";
 var ingredCnt = 3;
 var instruCnt = 3;
 
-// var obj = {
-//   Navigation: [
-//     {
-//       name: "Home",
-//       hrefName: "home",
-//     },
-//     {
-//       name: "Browse",
-//       hrefName: "browse",
-//     },
-//     {
-//       name: "Create Recipe",
-//       hrefName: "create",
-//     },
-//     // {
-//     //   name: "Login",
-//     //   hrefName: "login",
-//     // },
-//   ],
-//   FooterLinks: [
-//     {
-//       name: "Login",
-//       hrefName: "login",
-//     },
-//     {
-//       name: "Recipes by Category",
-//       hrefName: "categories",
-//     },
-//     {
-//       name: "Privacy and Copyright",
-//       hrefName: "privacy",
-//     },
-//     {
-//       name: "Create Recipe",
-//       hrefName: "createRecipe",
-//     },
-//     {
-//       name: "Your Recipes",
-//       hrefName: "yourRecipes",
-//     },
-//   ],
-// };
-
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -60,6 +17,8 @@ function route() {
     MODEL.changePage(pageID, addsubmitListeners);
   } else if (pageID == `recipe`) {
     MODEL.changePage(pageID, addRecipeListeners);
+  } else {
+    MODEL.changePage(pageID);
   }
 }
 
@@ -72,12 +31,37 @@ function addRecipeListeners() {
     let tt = $("#tt").val();
     let ss = $("#ss").val();
 
-    $(".ingred input").each(function (index, name) {
-      console.log("ingred " + index, this.value);
-    });
-    $(".instruction input").each(function () {
-      console.log(this.value);
-    });
+    if (nm == "") {
+      Swal.fire("Please enter recipe name.");
+    } else if (ds == "") {
+      Swal.fire("Please enter a description.");
+    } else if (tt == "") {
+      Swal.fire("Please enter recipe time.");
+    } else if (ss == "") {
+      Swal.fire("Please enter serving size.");
+    } else {
+      let recipeObj = {
+        id: 0,
+        name: nm,
+        description: ds,
+        totalTime: tt,
+        servingSize: ss,
+        instructions: [],
+        ingredients: [],
+      };
+      e.preventDefault();
+
+      $(".ingred input").each(function (index, name) {
+        console.log("ingred " + index, this.value);
+      });
+      $(".instruction input").each(function () {
+        console.log(this.value);
+      });
+
+      MODEL.setNewRecipe(recipeObj);
+      Swal.fire("You've added a recipe.");
+      window.location.replace("#created");
+    }
   });
 
   $("#ingredBtn").on("click", (e) => {
