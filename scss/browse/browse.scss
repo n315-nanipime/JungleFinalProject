@@ -21,9 +21,10 @@
 
   .try-text {
     position: absolute;
-    top: 60px;
+    top: 30px;
     left: 150px;
     font-family: caveatRegular;
+    font-size: 25px;
   }
 
   .foods-one {
@@ -114,14 +115,10 @@
   .browse {
     flex-direction: column;
 
-    // margin-top: 20px;
     height: fit-content;
   }
 
   .foods-one {
     flex-direction: column;
-    // margin-bottom: 120px;
-    // margin-top: 20px;
   }
 }
-

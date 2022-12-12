@@ -2,21 +2,26 @@
   width: 100%;
   height: 1000px;
   background-color: #ffd972;
-  // padding-top: 150px;
+  padding-top: 250px;
 
   .login-info {
-    position: relative;
+    display: flex;
+    margin: 0 15%;
+    align-items: center;
+    justify-content: space-evenly;
+    // position: relative;
 
     .login {
       max-width: 206px;
       margin: 0 auto;
-      position: absolute;
-      top: 283px;
-      left: 276px;
+      // position: absolute;
+      // top: 283px;
+      // left: 276px;
 
       .login-text {
         margin-bottom: 50px;
         font-size: 30px;
+        font-family: latoRegular;
       }
 
       input {
@@ -29,6 +34,7 @@
         outline: none;
         background-color: #ffd972;
         font-size: 12px;
+        font-family: latoRegular;
       }
     }
     button {
@@ -40,22 +46,26 @@
       box-shadow: 0px 10px 20px 1px gray;
       margin-top: 20px;
       cursor: pointer;
+      font-family: caveatRegular;
+      font-size: 25px;
     }
     .sign {
       max-width: 300px;
       margin: 0 auto;
-      position: absolute;
-      top: 175px;
-      left: 773px;
+      // position: absolute;
+      // top: 175px;
+      // left: 773px;
 
       .question {
         font-size: 12px;
         margin-bottom: 3px;
+        font-family: latoItalic;
       }
 
       .sign-text {
         font-size: 30px;
         margin-bottom: 80px;
+        font-family: latoRegular;
       }
       input {
         display: block;
@@ -67,6 +77,7 @@
         outline: none;
         background-color: #ffd972;
         font-size: 12px;
+        font-family: latoRegular;
       }
       button {
         width: 209px;
@@ -76,6 +87,8 @@
         border-color: #707070;
         margin-top: 20px;
         cursor: pointer;
+        font-family: caveatRegular;
+        font-size: 25px;
       }
     }
   }
@@ -83,23 +96,41 @@
 @media all and (max-width: 1000px) {
   .account-page {
     flex-direction: column;
+    height: 100%;
+    // background-color: #707070;
+    // padding-bottom: 40px;
 
-    // margin-top: 20px;
-  }
+    .login-info {
+      flex-direction: column;
 
-  .login-info {
-    flex-direction: column;
-  }
+      .login {
+        padding-bottom: 100px;
+      }
 
-  .login {
-    flex-direction: column;
-  }
+      .sign {
+        flex-direction: column;
+        top: 575px;
+        left: 273px;
+        // margin-bottom: 40px;
+        padding-bottom: 250px;
 
-  .login-text {
-    flex-direction: column;
-  }
+        .question {
+          flex-direction: column;
+        }
 
-  input {
-    flex-direction: column;
+        .sign-text {
+          flex-direction: column;
+        }
+
+        input {
+          flex-direction: column;
+          // top: 575px;
+          // left: 600px;
+        }
+
+        button {
+        }
+      }
+    }
   }
 }

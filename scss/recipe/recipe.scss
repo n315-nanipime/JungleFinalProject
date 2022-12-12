@@ -13,7 +13,7 @@
 
   .recipe-info {
     max-width: 1000px;
-    height: 400px;
+    min-height: 400px;
 
     .recipe-input {
       position: relative;
@@ -52,7 +52,7 @@
 
   .ingred {
     max-width: 1000px;
-    height: 300px;
+    min-height: 300px;
 
     .ingred-text {
       font-family: latoRegular;
@@ -76,14 +76,14 @@
 
   .instruction {
     max-width: 1000px;
-    height: 300px;
+    min-height: 300px;
 
     .instruction-text {
       font-family: latoRegular;
       font-size: 20px;
     }
 
-    .ingred-input {
+    .instruction-input {
       position: relative;
       input {
         display: block;

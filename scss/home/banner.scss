@@ -80,13 +80,18 @@
   .home-page {
     flex-direction: column;
     .banner {
+      flex-direction: column;
+      .circle {
+        flex-direction: column;
+        .circle-two {
+          top: 50px;
+          left: 50px;
+        }
+        .circle-one {
+          left: 300px;
+        }
+      }
     }
-
-    // background-image: linear-gradient(
-    //     rgba(42, 12, 120, 0.7),
-    //     rgba(242, 92, 84, 0.7)
-    //   ),
-    //   url(../images/hero.jpg);
   }
 
   .circle {

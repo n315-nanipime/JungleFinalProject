@@ -1,5 +1,8 @@
 import * as MODEL from "./model.js";
 
+var ingredCnt = 3;
+var instruCnt = 3;
+
 // var obj = {
 //   Navigation: [
 //     {
@@ -49,20 +52,66 @@ function route() {
 
   if (pageID == "") {
     MODEL.changePage("home");
-  } else {
+  } else if (pageID == `home`) {
     MODEL.changePage(pageID);
+  } else if (pageID == `browse`) {
+    MODEL.changePage(pageID);
+  } else if (pageID == `account`) {
+    MODEL.changePage(pageID, addsubmitListeners);
+  } else if (pageID == `recipe`) {
+    MODEL.changePage(pageID, addRecipeListeners);
   }
 }
 
+function addRecipeListeners() {
+  $("#recipe-button").click(function (e) {
+    e.preventDefault();
+    console.log("submit");
+    let nm = $("#nm").val();
+    let ds = $("#ds").val();
+    let tt = $("#tt").val();
+    let ss = $("#ss").val();
+
+    $(".ingred input").each(function (index, name) {
+      console.log("ingred " + index, this.value);
+    });
+    $(".instruction input").each(function () {
+      console.log(this.value);
+    });
+  });
+
+  $("#ingredBtn").on("click", (e) => {
+    $(".ingred .ingred-input").append(
+      `<input type="text" id="ingred${ingredCnt}" placeholder="Ingredient #${
+        ingredCnt + 1
+      }" />`
+    );
+    ingredCnt++;
+  });
+
+  $("#instruBtn").on("click", (e) => {
+    $(".instruction .instruction-input").append(
+      `<input type="text" id="inst${instruCnt}" placeholder="Instruction #${
+        instruCnt + 1
+      }" />`
+    );
+    instruCnt++;
+  });
+
+  // console.log("hi");
+}
+
 function addsubmitListeners() {
-  $("#submit").click(function (e) {
+  $("#sign-button").click(function (e) {
     e.preventDefault();
     console.log("submit");
     let fn = $("#fn").val();
     let ln = $("#ln").val();
     let em = $("#em").val();
     let pw = $("#pw").val();
+
     if (fn == "") {
+      console.log(fn);
       Swal.fire("add first name");
     } else if (ln == "") {
       Swal.fire("add last name");
@@ -74,7 +123,29 @@ function addsubmitListeners() {
       login();
     }
     console.log(fn);
-    login();
+    // login();
+  });
+
+  $("#login-button").click(function (e) {
+    e.preventDefault();
+    console.log("submit");
+    let em = $("#email").val();
+    let pw = $("#password").val();
+
+    if (fn == "") {
+      console.log(fn);
+      Swal.fire("add first name");
+    } else if (ln == "") {
+      Swal.fire("add last name");
+    } else if (em == "") {
+      Swal.fire("add email");
+    } else if (pw == "") {
+      Swal.fire("add password");
+    } else {
+      login();
+    }
+    console.log(fn);
+    // login();
   });
 }
 
@@ -84,6 +155,7 @@ function login() {
 
 function initApp() {
   $(window).on("hashchange", route);
+  route();
   loopData();
 }
 
@@ -102,48 +174,6 @@ function btnListeners() {
     $();
   });
 }
-
-// function btnListeners() {
-//   $("#sign-button").on("click", function (e) {
-//     //e.preventDefault();
-//     console.log("submit");
-
-//     let fn = $("#fn").val();
-//     let ln = $("#ln").val();
-//     let em = $("#em").val();
-//     let pw = $("#pw").val();
-//     if (fn == "") {
-//       alert("enter first name");
-//     } else if (ln == "") {
-//       alert("enter data");
-//     } else if (em == "") {
-//       alert("enter data");
-//     } else if (pw == "") {
-//       alert("enter data");
-//     } else {
-//       let userObj = {
-//         firstName: fn,
-//         lastName: ln,
-//         email: em,
-//         password: pw,
-//         // in a normal example, you would not store pw
-//       };
-
-//       MODEL.setUserInfo(userObj);
-//     }
-//   });
-// }
-
-// function addFooterLinks() {
-//   $("footer .links").html(``);
-//   $.each(obj.FooterLinks, (idx, footerItem) => {
-//     $("footer .links").append(
-//       `<a id="${idx}" href="#${footerItem.hrefName.toLowerCase()}">${
-//         footerItem.name
-//       }</a>`
-//     );
-//   });
-// }
 
 $(document).ready(function () {
   //addFooterLinks();
