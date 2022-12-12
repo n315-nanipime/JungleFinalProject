@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -34,7 +33,7 @@ p {
 }
 @font-face {
   font-family: gillSansItalic;
-  src: url(../fonts/GillSans\Italic.ttf);
+  src: url(../fonts/GillSansItalic.ttf);
 }
 @font-face {
   font-family: gillSansLight;
@@ -55,15 +54,9 @@ p {
 nav {
   width: 100%;
   height: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: -150px;
@@ -97,15 +90,9 @@ nav .links {
   font-family: caveatRegular;
   width: 50%;
   font-size: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   letter-spacing: 2.5px;
   border-bottom: 3px solid transparent;
   text-decoration: none;
@@ -116,8 +103,7 @@ nav .loginAccount {
   background: #ffd972 0% 0% no-repeat padding-box;
   width: 158px;
   height: 52px;
-  -webkit-box-shadow: 0px 10px 6px #00000029;
-          box-shadow: 0px 10px 6px #00000029;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
   border-radius: 26px;
   border-width: 0;
   font-family: caveatRegular;
@@ -131,15 +117,9 @@ nav .loginAccount p {
 
 footer {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
   font-family: latoItalic;
   font-size: 15px;
   margin-top: -60px;
@@ -157,24 +137,14 @@ footer .footer-left {
 }
 
 footer .footer-middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 footer .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer .footer-right img {
@@ -186,16 +156,9 @@ footer .footer-right img {
 .home-page {
   width: 100%;
   height: 1000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(242, 92, 84, 0.7)), to(rgba(242, 92, 84, 0.7))), url(../images/hero.jpg);
+  align-items: center;
+  justify-content: center;
   background-image: linear-gradient(rgba(242, 92, 84, 0.7), rgba(242, 92, 84, 0.7)), url(../images/hero.jpg);
   background-position: center;
   background-size: cover;
@@ -256,22 +219,13 @@ footer .footer-right img {
 
 @media all and (max-width: 1000px) {
   .home-page {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .home-page .banner {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .home-page .banner .circle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .home-page .banner .circle .circle-two {
     top: 50px;
@@ -280,25 +234,16 @@ footer .footer-right img {
   .home-page .banner .circle .circle-one {
     left: 300px;
   }
-
   .circle {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-
   .text-one {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .browse {
   width: 100%;
   height: 1000px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(167, 232, 189, 0.7)), to(rgba(167, 232, 189, 0.7))), url(../images/recipe-hero.jpg);
   background-image: linear-gradient(rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)), url(../images/recipe-hero.jpg);
   background-position: center;
   background-size: cover;
@@ -322,18 +267,12 @@ footer .footer-right img {
   margin: 0 auto;
   width: 95%;
   height: 40%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 .browse .foods-one .recipe-holder {
   width: 524px;
   height: 263px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .browse .foods-one .recipe-holder .recipe-image {
@@ -397,20 +336,11 @@ footer .footer-right img {
 
 @media all and (max-width: 1000px) {
   .browse {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
+    flex-direction: column;
     height: fit-content;
   }
-
   .foods-one {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .account-page {
@@ -420,16 +350,10 @@ footer .footer-right img {
   padding-top: 250px;
 }
 .account-page .login-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0 15%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .account-page .login-info .login {
   max-width: 206px;
@@ -458,8 +382,7 @@ footer .footer-right img {
   background-color: #ffd972;
   border-radius: 10px;
   border: #ffd972;
-  -webkit-box-shadow: 0px 10px 20px 1px gray;
-          box-shadow: 0px 10px 20px 1px gray;
+  box-shadow: 0px 10px 20px 1px gray;
   margin-top: 20px;
   cursor: pointer;
   font-family: caveatRegular;
@@ -505,47 +428,29 @@ footer .footer-right img {
 
 @media all and (max-width: 1000px) {
   .account-page {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     height: 100%;
   }
   .account-page .login-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .account-page .login-info .login {
     padding-bottom: 100px;
   }
   .account-page .login-info .sign {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     top: 575px;
     left: 273px;
     padding-bottom: 250px;
   }
   .account-page .login-info .sign .question {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .account-page .login-info .sign .sign-text {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .account-page .login-info .sign input {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
 .create-recipe {
@@ -580,15 +485,9 @@ footer .footer-right img {
   width: 110px;
   height: 36px;
   background-color: #efa7a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: black;
   font-family: caveatRegular;
   font-size: 17px;
@@ -647,15 +546,9 @@ footer .footer-right img {
   width: 38px;
   height: 38px;
   background-color: #efa7a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   font-size: 40px;
   border-radius: 50%;
@@ -667,10 +560,7 @@ footer .footer-right img {
 .create-recipe .addBtn p {
   font-size: 20px;
   margin-top: 20px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   font-family: gillSans;
 }
 .create-recipe .create {
@@ -684,3 +574,294 @@ footer .footer-right img {
   font-family: caveatRegular;
   margin-bottom: 130px;
 }
+
+.created {
+  width: 100%;
+  height: 1000px;
+  background-image: linear-gradient(rgba(167, 232, 189, 0.7), rgba(167, 232, 189, 0.7)), url(../images/recipe-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: green;
+  padding-top: 150px;
+}
+.created .created-page {
+  width: 30%;
+  height: 15%;
+  position: relative;
+}
+.created .try-text {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  font-family: caveatRegular;
+  font-size: 25px;
+}
+.created .foods-one {
+  margin: 0 auto;
+  width: 95%;
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.created .foods-one .recipe-holder {
+  width: 524px;
+  height: 263px;
+  display: flex;
+}
+.created .foods-one .recipe-holder .recipe-image {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.created .foods-one .recipe-holder .recipe-text {
+  width: 224px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: latoRegular;
+}
+.created .foods-one .recipe-holder .recipe-text .title {
+  margin-top: 12px;
+  margin-left: 60px;
+  font-size: 15px;
+  font-family: latoRegular;
+}
+.created .foods-one .recipe-holder .recipe-text .break {
+  width: 150px;
+  height: 5px;
+  background-color: black;
+  margin-top: -13px;
+  margin-left: 40px;
+}
+.created .foods-one .recipe-holder .recipe-text .info {
+  margin-left: 30px;
+  font-size: 9px;
+}
+.created .foods-one .recipe-holder .recipe-text .time {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.created .foods-one .recipe-holder .recipe-text .time img {
+  width: 10px;
+}
+.created .foods-one .recipe-holder .recipe-text .serving {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.created .foods-one .recipe-holder .recipe-text .serving img {
+  width: 10px;
+}
+.created .foods-one .recipe-holder .pizza {
+  background-image: url(../images/recipe-pizza.jpg);
+}
+.created .foods-one .recipe-holder .burger {
+  background-image: url(../images/recipe-burger.jpg);
+}
+.created .foods-one .chicken {
+  background-image: url(../images/recipe-pilaf.jpg);
+}
+.created .foods-one .chow {
+  background-image: url(../images/recipe-chowmein.jpg);
+}
+
+@media all and (max-width: 1000px) {
+  .created {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .foods-one {
+    flex-direction: column;
+  }
+}
+.edit-recipe {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding-top: 150px;
+}
+.edit-recipe .intro {
+  margin-top: 100px;
+  font-size: 25px;
+  margin-bottom: 109px;
+  font-family: caveatBold;
+}
+.edit-recipe .recipe-info {
+  max-width: 1000px;
+  min-height: 400px;
+}
+.edit-recipe .recipe-info .recipe-input {
+  position: relative;
+}
+.edit-recipe .recipe-info .recipe-input input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 12px;
+}
+.edit-recipe .recipe-info .recipe-input .addImg {
+  width: 110px;
+  height: 36px;
+  background-color: #efa7a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: caveatRegular;
+  font-size: 17px;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  left: 890px;
+}
+.edit-recipe .recipe-info .recipe-input .addImg p {
+  margin-top: 10px;
+}
+.edit-recipe .ingred {
+  max-width: 1000px;
+  min-height: 300px;
+}
+.edit-recipe .ingred .ingred-text {
+  font-family: latoRegular;
+  font-size: 20px;
+}
+.edit-recipe .ingred .ingred-input {
+  position: relative;
+}
+.edit-recipe .ingred .ingred-input input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 12px;
+}
+.edit-recipe .instruction {
+  max-width: 1000px;
+  min-height: 300px;
+}
+.edit-recipe .instruction .instruction-text {
+  font-family: latoRegular;
+  font-size: 20px;
+}
+.edit-recipe .instruction .instruction-input {
+  position: relative;
+}
+.edit-recipe .instruction .instruction-input input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 12px;
+}
+.edit-recipe .addBtn {
+  width: 38px;
+  height: 38px;
+  background-color: #efa7a7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.edit-recipe .addBtn p {
+  font-size: 20px;
+  margin-top: 20px;
+  user-select: none;
+  font-family: gillSans;
+}
+.edit-recipe .edit {
+  width: 422px;
+  height: 52px;
+  background-color: #efa7a7;
+  border-radius: 20px;
+  border: none;
+  margin-left: 300px;
+  font-size: 25px;
+  font-family: caveatRegular;
+  margin-bottom: 130px;
+}
+
+.view {
+  width: 100%;
+  height: 1000px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.view .recipe-image {
+  width: 300px;
+  height: 263px;
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.view .recipe-text {
+  width: 224px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: latoRegular;
+}
+.view .recipe-text .title {
+  margin-top: 12px;
+  margin-left: 60px;
+  font-size: 15px;
+  font-family: latoRegular;
+}
+.view .recipe-text .break {
+  width: 150px;
+  height: 5px;
+  background-color: black;
+  margin-top: -13px;
+  margin-left: 40px;
+}
+.view .recipe-text .info {
+  margin-left: 30px;
+  font-size: 9px;
+}
+.view .recipe-text .time {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.view .recipe-text .time img {
+  width: 10px;
+}
+.view .recipe-text .serving {
+  font-size: 10px;
+  margin-left: 80px;
+}
+.view .recipe-text .serving img {
+  width: 10px;
+}
+.view .pizza {
+  background-image: url(../images/recipe-pizza.jpg);
+}
+
+@media all and (max-width: 1000px) {
+  .view {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
