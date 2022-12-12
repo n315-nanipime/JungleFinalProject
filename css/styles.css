@@ -844,8 +844,12 @@ footer .footer-right img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .created .foods-one .recipe-holder .recipe-image {
   width: 300px;
@@ -937,14 +941,24 @@ footer .footer-right img {
 }
 .created .foods-one .recipe-holder #editBtn,
 .created .foods-one .recipe-holder #deleteBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 128px;
   height: 42px;
   background: #ffd972 0% 0% no-repeat padding-box;
-  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  -webkit-box-shadow: 0px 10px 6px #00000029;
+          box-shadow: 0px 10px 6px #00000029;
   border-radius: 26px;
   border-width: 0;
 }

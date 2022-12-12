@@ -19,10 +19,10 @@ function route() {
     MODEL.changePage(pageID, addRecipeListeners);
   } else if (pageID == `created`) {
     MODEL.changePage(pageID);
+  } else if (pageID == `edit`) {
+    MODEL.changePage(pageID);
   }
 }
-
-function createnewRecipe() {}
 
 function addRecipeListeners() {
   $("#recipe-button").click(function (e) {
