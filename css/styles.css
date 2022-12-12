@@ -617,6 +617,28 @@ footer .footer-right img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.created .foods-one .recipe-holder .recipe-image a {
+  width: 224px;
+  height: 263px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: latoRegular;
+  text-decoration: none;
+}
+.created .foods-one .recipe-holder .recipe-image a #viewBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-top: 40%;
+  text-decoration: none;
+  width: 128px;
+  height: 42px;
+  background: #ffd972 0% 0% no-repeat padding-box;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 26px;
+  border-width: 0;
+}
 .created .foods-one .recipe-holder .recipe-text {
   width: 224px;
   height: 263px;
@@ -661,10 +683,10 @@ footer .footer-right img {
 .created .foods-one .recipe-holder .burger {
   background-image: url(../images/recipe-burger.jpg);
 }
-.created .foods-one .chicken {
+.created .foods-one .recipe-holder .chicken {
   background-image: url(../images/recipe-pilaf.jpg);
 }
-.created .foods-one .chow {
+.created .foods-one .recipe-holder .chow {
   background-image: url(../images/recipe-chowmein.jpg);
 }
 

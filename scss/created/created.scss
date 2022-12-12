@@ -10,7 +10,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-color: green;
-  // position: fixed;
   padding-top: 150px;
 
   .created-page {
@@ -46,6 +45,31 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        a {
+          width: 224px;
+          height: 263px;
+          background-color: white;
+          border-radius: 20px;
+          font-family: latoRegular;
+          text-decoration: none;
+          #viewBtn {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: 0 auto;
+            margin-top: 40%;
+
+            text-decoration: none;
+
+            width: 128px;
+            height: 42px;
+            background: #ffd972 0% 0% no-repeat padding-box;
+            box-shadow: 0px 10px 6px #00000029;
+            border-radius: 26px;
+            border-width: 0;
+          }
+        }
       }
 
       .recipe-text {
@@ -100,14 +124,14 @@
       .burger {
         background-image: url(../images/recipe-burger.jpg);
       }
-    }
 
-    .chicken {
-      background-image: url(../images/recipe-pilaf.jpg);
-    }
+      .chicken {
+        background-image: url(../images/recipe-pilaf.jpg);
+      }
 
-    .chow {
-      background-image: url(../images/recipe-chowmein.jpg);
+      .chow {
+        background-image: url(../images/recipe-chowmein.jpg);
+      }
     }
   }
 }
