@@ -308,13 +308,12 @@ footer .footer-right img {
 }
 .browse .browse-page {
   width: 30%;
-  height: 15%;
-  position: relative;
+  height: 10%;
 }
 .browse .try-text {
-  position: absolute;
-  top: 30px;
-  left: 150px;
+  margin: 0 35%;
+  margin-top: 50px;
+  width: 300px;
   font-family: caveatRegular;
   font-size: 25px;
 }
@@ -330,8 +329,8 @@ footer .footer-right img {
           justify-content: space-evenly;
 }
 .browse .foods-one .recipe-holder {
-  width: 524px;
-  height: 263px;
+  max-width: 524px;
+  min-height: 263px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,16 +400,20 @@ footer .footer-right img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100%;
   }
-
-  .foods-one {
+  .browse .foods-one {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 50px;
+  }
+  .browse .foods-one .recipe-holder {
+    padding-bottom: 50px;
+  }
+  .browse .foods-one .recipe-image {
+    padding-bottom: 50px;
   }
 }
 .account-page {
@@ -683,4 +686,120 @@ footer .footer-right img {
   font-size: 25px;
   font-family: caveatRegular;
   margin-bottom: 130px;
+}
+
+@media all and (max-width: 1000px) {
+  .create-recipe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .recipe-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .recipe-info .recipe-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .recipe-info .recipe-input input {
+    width: 60%;
+    height: 50px;
+  }
+  .create-recipe .recipe-info .recipe-input .addImg {
+    width: 110px;
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: black;
+    font-family: caveatRegular;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 490px;
+  }
+  .create-recipe .recipe-info .recipe-input .addImg p {
+    margin-top: 10px;
+  }
+  .create-recipe .ingred {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .ingred .ingred-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .ingred .ingred-input input {
+    display: block;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 12px;
+  }
+  .create-recipe .instruction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .create-recipe .instruction .instruction-input input {
+    display: block;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 12px;
+  }
+  .create-recipe .addBtn {
+    width: 38px;
+    height: 38px;
+    background-color: #efa7a7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: white;
+    font-size: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 410px;
+  }
+  .create-recipe .addBtn p {
+    font-size: 20px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-family: gillSans;
+  }
 }

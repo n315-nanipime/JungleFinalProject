@@ -46,6 +46,13 @@ var instruCnt = 3;
 //   ],
 // };
 
+// const ri = document.querySelector("#ri");
+// var upload_image = "";
+
+// ri.addEventListener("change", function () {
+//   console.log(ri.value);
+// });
+
 function route() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -75,8 +82,8 @@ function addRecipeListeners() {
     $(".ingred input").each(function (index, name) {
       console.log("ingred " + index, this.value);
     });
-    $(".instruction input").each(function () {
-      console.log(this.value);
+    $(".instruction input").each(function (index, name) {
+      console.log("instruction " + index, this.value);
     });
   });
 
