@@ -33,12 +33,37 @@ function addRecipeListeners() {
     let tt = $("#tt").val();
     let ss = $("#ss").val();
 
-    $(".ingred input").each(function (index, name) {
-      console.log("ingred " + index, this.value);
-    });
-    $(".instruction input").each(function (index, name) {
-      console.log("instruction " + index, this.value);
-    });
+    if (nm == "") {
+      Swal.fire("Please enter recipe name.");
+    } else if (ds == "") {
+      Swal.fire("Please enter a description.");
+    } else if (tt == "") {
+      Swal.fire("Please enter recipe time.");
+    } else if (ss == "") {
+      Swal.fire("Please enter serving size.");
+    } else {
+      let recipeObj = {
+        id: 0,
+        name: nm,
+        description: ds,
+        totalTime: tt,
+        servingSize: ss,
+        instructions: [],
+        ingredients: [],
+      };
+      e.preventDefault();
+
+      $(".ingred input").each(function (index, name) {
+        console.log("ingred " + index, this.value);
+      });
+      $(".instruction input").each(function () {
+        console.log(this.value);
+      });
+
+      MODEL.setNewRecipe(recipeObj);
+      Swal.fire("You've added a recipe.");
+      window.location.replace("#created");
+    }
   });
 
   $("#ingredBtn").on("click", (e) => {
