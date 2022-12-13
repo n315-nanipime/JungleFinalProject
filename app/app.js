@@ -19,7 +19,7 @@ function route() {
     MODEL.changePage(pageID, addRecipeListeners);
   } else if (pageID == `created`) {
     MODEL.changePage(pageID, yourRecipe);
-  } else if (pageID == `edit`) {
+  } else {
     MODEL.changePage(pageID);
   }
 }
@@ -167,6 +167,16 @@ function addsubmitListeners() {
 function login() {
   Swal.fire("submit");
 }
+
+// function deleteRecipe() {
+//   $("#app #deleteBtn").click(function (e) {
+
+//   });
+// }
+
+// function removed() {
+//   Swal.fire("Recipe deleted.");
+// }
 
 function initApp() {
   $(window).on("hashchange", route);

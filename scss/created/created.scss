@@ -34,6 +34,7 @@
     height: 40%;
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
 
     .recipe-holder {
       width: 524px;
@@ -83,11 +84,12 @@
         border-radius: 20px;
         font-family: latoRegular;
 
-        .title {
+        .your-recipe-title {
+          width: fit-content;
           margin-top: 12px;
-          margin-left: 60px;
+          margin-left: 40px;
           font-size: 15px;
-          font-family: latoRegular;
+          font-family: latoBlack;
         }
         .break {
           width: 150px;
@@ -100,11 +102,13 @@
         .info {
           margin-left: 30px;
           font-size: 9px;
+          font-family: latoRegular;
         }
 
         .time {
           font-size: 10px;
           margin-left: 80px;
+          font-family: latoRegular;
 
           img {
             width: 10px;
@@ -114,6 +118,7 @@
         .serving {
           font-size: 10px;
           margin-left: 80px;
+          font-family: latoRegular;
 
           img {
             width: 10px;
@@ -136,14 +141,13 @@
       .chow {
         background-image: url(../images/recipe-chowmein.jpg);
       }
+    }
+    .bottom-buttons {
+      margin-left: 2%;
+      margin-top: 1%;
 
       #editBtn,
       #deleteBtn {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-
         width: 128px;
         height: 42px;
         background: #ffd972 0% 0% no-repeat padding-box;
@@ -156,12 +160,26 @@
 }
 @media all and (max-width: 1000px) {
   .created {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: column;
-
     height: fit-content;
-  }
 
-  .foods-one {
-    flex-direction: column;
+    .try-text {
+      position: relative;
+    }
+
+    .foods-one {
+      flex-direction: column;
+
+      .recipe-holder {
+        padding-bottom: 50px;
+      }
+
+      .recipe-image {
+        padding-bottom: 50px;
+      }
+    }
   }
 }
