@@ -86,7 +86,7 @@
 
         .your-recipe-title {
           width: fit-content;
-          margin-top: 12px;
+          margin-top: 20%;
           margin-left: 40px;
           font-size: 15px;
           font-family: latoBlack;
@@ -100,9 +100,10 @@
         }
 
         .info {
-          margin-left: 30px;
+          margin-left: 40px;
           font-size: 9px;
           font-family: latoRegular;
+          text-align: left;
         }
 
         .time {
