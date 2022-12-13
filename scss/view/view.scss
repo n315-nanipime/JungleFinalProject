@@ -14,7 +14,7 @@
     padding: 2%;
 
     .view-top-left {
-      width: 50%;
+      width: 30%;
       .title {
         //margin-top: 12px;
         top: 300px;
@@ -38,8 +38,9 @@
       width: 468px;
       height: 421px;
       background-color: white;
-      border-radius: 20px;
+      // border-radius: 20px;
       font-family: latoRegular;
+      margin-left: 130px;
 
       h2 {
         font-family: latoBlack;
