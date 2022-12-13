@@ -94,8 +94,9 @@ function addRecipeListeners() {
 function yourRecipe() {
   $("#recipe-button").on("click", (e) => {
     $(".recipe-text ").append(
-      `<p class="title">
-        ${recipeObj.name}
+      `<p class="your-recipe-title">
+      <p ${recipeObj.name}><p>
+        
       <p class="break"></p>
     </p>
     <p class="info">
@@ -201,7 +202,6 @@ function btnListeners() {
 }
 
 $(document).ready(function () {
-  //addFooterLinks();
   initApp();
 });
 

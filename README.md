@@ -8,16 +8,16 @@ placeholder !!
 
 <u>Denisse:</u>
 
-<li>placeholder !!</li>
-<li>placeholder !!</li>
-<li>placeholder !!</li>
+<li>What I did was the create and design the home, browser, login, and create recipe page </li>
+<li>I made each page responsive and had userfeed back in the login</li>
+<li>I also did the javascript for my pages that I did</li>
 <br>
 
 <u>Nathalie:</u>
 
-<li>placeholder !!</li>
-<li>placeholder !!</li>
-<li>placeholder !!</li>
+<li>I work on the nav and footer for all the pages</li>
+<li>I work on your recipe, view, edit, and delete function and design</li>
+<li>I also made each page responsive and work on the javascript for my pages</li>
 <br>
 
 <b> INSTRUCTIONS :</b>
