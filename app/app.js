@@ -18,7 +18,7 @@ function route() {
   } else if (pageID == `recipe`) {
     MODEL.changePage(pageID, addRecipeListeners);
   } else if (pageID == `created`) {
-    MODEL.changePage(pageID);
+    MODEL.changePage(pageID, yourRecipe);
   } else if (pageID == `edit`) {
     MODEL.changePage(pageID);
   }
@@ -56,8 +56,12 @@ function addRecipeListeners() {
       $(".ingred input").each(function (index, name) {
         console.log("ingred " + index, this.value);
       });
-      $(".instruction input").each(function () {
-        console.log(this.value);
+      $(".instruction input").each(function (index, name) {
+        console.log("instruction" + index, this.value);
+      });
+
+      $(".recipe-input input").each(function (index, name) {
+        console.log("recipe" + index, this.value);
       });
 
       MODEL.setNewRecipe(recipeObj);
@@ -85,6 +89,29 @@ function addRecipeListeners() {
   });
 
   // console.log("hi");
+}
+
+function yourRecipe() {
+  $("#recipe-button").on("click", (e) => {
+    $(".recipe-text ").append(
+      `<p class="title">
+        ${recipeObj.name}
+      <p class="break"></p>
+    </p>
+    <p class="info">
+ 
+    </p>
+    <p class="time">
+      <img src="/images/time.svg" />
+    
+    </p>
+    <p class="serving">
+      <img src="/images/servings.svg" />
+     
+    </p>
+      `
+    );
+  });
 }
 
 function addsubmitListeners() {

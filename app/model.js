@@ -1,8 +1,4 @@
-// just trying out
-//var userInfo = {};
-
 var recipeObj = [];
-//var setNewRecipe = [];
 
 export function changePage(pageID, callback) {
   $.get(`pages/${pageID}.html`, function (data) {
@@ -17,6 +13,11 @@ export function changePage(pageID, callback) {
         callback();
       }
     }
+    if (pageID == `created`) {
+      if (callback) {
+        callback();
+      }
+    }
   }).fail((error) => {
     if (error.status == "404") {
     }
@@ -24,13 +25,7 @@ export function changePage(pageID, callback) {
   });
 }
 
-export function setNewRecipe(index) {
-  recipeObj.push(index);
-  //$("#cartCount").html(recipeObj.length.toString());
+export function setNewRecipe(recipeIdx) {
+  recipeObj.push(recipeIdx);
+  $("#created").html(recipeObj.length.toString());
 }
-
-// trying the login
-// export function setUserInfo(userObject) {
-//   userInfo = userObject;
-//   console.log(userInfo);
-// }
